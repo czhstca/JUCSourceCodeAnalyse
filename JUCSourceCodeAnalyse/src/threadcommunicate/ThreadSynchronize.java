@@ -1,7 +1,7 @@
 package threadcommunicate;
 
 /**
- * Thread类的synchronize机制分析
+ * Thread类的synchronize机制分析(保证线程间的互斥)
  * synchronize既保证了原子性，也保证了可见性（注意和volatile的区别）
  * @author EX_WLJR_CHENZEHUA
  *
