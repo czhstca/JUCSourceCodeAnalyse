@@ -12,7 +12,7 @@ public class WaitNotify {
 	 * 1.在调用wait()方法前必须先获取锁，也就是wait()和notify()方法必须在synchronized方法/代码块中被调用
 	 *   如果在synchronized方法/代码块之外调用了wait()和notify()方法，则会抛出java.lang.IllegalMonitorStateException异常
 	 * 
-	 * 2.调用wait()方法后，当前线程或释放共享资源的锁，并从Runnable状态变更为waiting状态进入等待队列
+	 * 2.调用wait()方法后，当前线程会释放共享资源的锁，并从Runnable状态变更为waiting状态进入等待队列
 	 *   直到接收到notify信号或是interrupt信号才会变为blocked或terminal状态.
 	 * 
 	 * 	  调用nofity()方法后，可以随机唤醒等待队列中的一个线程，使其从waiting状态变更为blocked状态(因为还没有获得资源锁).
